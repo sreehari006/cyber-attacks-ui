@@ -68,7 +68,14 @@ const RansomwareHome = () => {
           <TableBody>
             {data.map(row => (
               <TableRow key={row.id}>
-                <TableCell>{row.name}</TableCell>
+                <TableCell>
+                  
+                <span key={row.name}>
+                        <a href={`/ransomware/${row.name}`}>
+                          {row.name}
+                        </a>
+                      </span>
+            </TableCell>
                 <TableCell>
                   {Array.from(row.ransomwareAlias.entries()).map(([key, value]) => (
                       <span key={key}>

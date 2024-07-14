@@ -3,6 +3,8 @@ import RansomwareAppBar from './RansomwareAppBar';
 import RansomwareDrawer from './RansomwareDrawer';
 import RansomwareHome from './RansomwareHome'
 import RansomwareSearch from './RansomwareSearch'
+import RansomwareAdd from './RansomwareAdd'
+import RansomwareItem from './RansomwareItem'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 
 export default function RansomwareRoute() {
@@ -42,6 +44,8 @@ export default function RansomwareRoute() {
                     <Route path="/" element={<RansomwareHome /> } />
                     <Route path="/home" element={<RansomwareHome /> } />
                     <Route path="/search" element={<RansomwareSearch /> } />
+                    <Route path="/add" element={<RansomwareAdd /> } />
+                    <Route path="/ransomware/:item" element={<RansomwareItem /> } />
                 </Routes>
                 <RouteChangeHandler setCurrentPath={setCurrentPath} />
             </Router>

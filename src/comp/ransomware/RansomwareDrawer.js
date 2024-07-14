@@ -10,6 +10,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import HomeIcon from '@mui/icons-material/Home';
 import DescriptionIcon from '@mui/icons-material/Description';
+import AddIcon from '@mui/icons-material/Add';
 import { Link } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 
@@ -50,18 +51,16 @@ const RansomwareDrawer = ({drawerSharedState, onDrawerSharedStateChange, onViewC
               <ListItemText primary="Search" />
             </ListItemButton>
           </ListItem>
-        
-      </List>
-      <Divider />
-      <List>
-      <ListItem key="reports" disablePadding>
-            <ListItemButton disabled>
+
+          <ListItem key="Add" disablePadding component={CustomLink} to="/add" onClick={toggleDrawer(false)}>
+            <ListItemButton>
               <ListItemIcon>
-                 <InboxIcon />
+                <AddIcon />
               </ListItemIcon>
-              <ListItemText primary="Reports" />
+              <ListItemText primary="Add" />
             </ListItemButton>
-        </ListItem>
+          </ListItem>
+        
       </List>
     </Box>
   );
