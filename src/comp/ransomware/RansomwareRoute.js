@@ -17,12 +17,12 @@ export default function RansomwareRoute() {
 
     function RouteChangeHandler({ setCurrentPath }) {
         const location = useLocation();
-      
+    
         useEffect(() => {
-          
-          setCurrentPath(location.pathname);
+        
+        setCurrentPath(location.pathname);
         }, [location, setCurrentPath]);
-      
+    
         return null;
     }
 
@@ -30,12 +30,12 @@ export default function RansomwareRoute() {
     return(
         <React.Fragment>
             <Router>
-           <RansomwareAppBar 
+        <RansomwareAppBar 
                 drawerSharedState={drawerSharedState} 
                 onDrawerSharedStateChange={handleDrawerSharedStateChange} 
             />
             
-           <RansomwareDrawer 
+        <RansomwareDrawer 
                 drawerSharedState={drawerSharedState} 
                 onDrawerSharedStateChange={handleDrawerSharedStateChange} 
             />
@@ -49,7 +49,7 @@ export default function RansomwareRoute() {
                 </Routes>
                 <RouteChangeHandler setCurrentPath={setCurrentPath} />
             </Router>
-           
+        
         </React.Fragment>
     );
 }

@@ -12,7 +12,7 @@ const RansomewareAppBar = ({drawerSharedState, onDrawerSharedStateChange}) => {
         onDrawerSharedStateChange(!drawerSharedState)
     }
 
-   return (
+  return (
         <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
             <Toolbar>
@@ -40,7 +40,7 @@ const RansomewareAppBar = ({drawerSharedState, onDrawerSharedStateChange}) => {
                 </IconButton>
             }
 
-<Typography
+          <Typography
             variant="h6"
             noWrap
             component="a"

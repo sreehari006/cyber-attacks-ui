@@ -27,7 +27,7 @@ const RansomwareSearch = () => {
           display="flex"
           alignItems="center"
           justifyContent="center"
-          height="100vh" // Adjust height of the centered container as needed
+          height="100vh" 
         >
           <Box width="50%">
             <TextField
@@ -36,7 +36,7 @@ const RansomwareSearch = () => {
               variant="outlined"
               value={inputValue}
               onChange={handleInputChange}
-              sx={{ height: '100%' }} // Adjust height of TextField to match Button
+              sx={{ height: '100%' }} 
             />
           </Box>
           <Box ml={2}>
@@ -44,7 +44,7 @@ const RansomwareSearch = () => {
               variant="contained"
               color="primary"
               onClick={handleButtonClick}
-              sx={{ height: '100%' }} // Adjust height of Button to match TextField
+              sx={{ height: '100%' }} 
             >
               Fetch Data
             </Button>
